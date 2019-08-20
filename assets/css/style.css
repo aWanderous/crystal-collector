@@ -7,11 +7,20 @@ h1 {
     font-family: 'ZCOOL KuaiLe', cursive;
     text-align: center
 }
-p {
+
+#story {
+    padding: 10px 100px;
     font-family: 'Grenze', serif;
+    text-align: center;
 }
 
-#importantText {
+#target {
+    color: green;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.importantText {
     color: red;
     font-weight: bold; 
 }

@@ -5,6 +5,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Crystals Collector Game</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="assets/javascript/game.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,16 +21,19 @@
 
   <!-- Objective story-->
   <div class="container">
-    <p>Please help!!</p> 
-    <p>The bandits has taken</p>
-    <!-- resets every game -->
-    <p id="target-text"></p>
-    <p>of my lord's crystals.</p>
-    <p>To get the crystals, you <span id="importantText">can not take more than what was stolen from us</span> or they will come back to our village...</p>
-    <p>but I need all of my lord's crystals back or I will be...</p>
-    <p>each room contains <span id="importantText">boxes of different amount of crystals, click on them</span> to take a box of crystals.</p>
-    <p>Please hurry!</p>
+    <div id="story">
+      <h3>Please help!!</h3> 
+      <p>The bandits has taken</p>
+      <!-- resets every game -->
+      <p id="getNumber"></p>
+      <p>of my lord's crystals.</p>
+      <p>To get the crystals, you <span class="importantText">can not take more than what was stolen from us</span> or the bandits will come back to our town...</p>
+      <p>but I need all of my lord's crystals back or I will be...</p>
+      <p>each room contains <span class="importantText">boxes of different amount of crystals, click on them</span> to take a box of crystals.</p>
+      <p>Please hurry!</p>
+    </div>
   </div>
+
 
   <div class="container">
     <div class="row">
