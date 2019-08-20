@@ -1,0 +1,21 @@
+
+header {
+    background-color: yellow;
+    padding: 20px;
+}
+h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center
+}
+p {
+    font-family: 'Grenze', serif;
+}
+
+#importantText {
+    color: red;
+    font-weight: bold; 
+}
+
+img {
+    width: 100%;
+}
