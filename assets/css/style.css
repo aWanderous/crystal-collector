@@ -1,7 +1,7 @@
 
 header {
     background-color: yellow;
-    padding: 20px;
+    padding: 10px;
 }
 h1 {
     font-family: 'ZCOOL KuaiLe', cursive;
@@ -14,9 +14,9 @@ h1 {
     text-align: center;
 }
 
-#target {
+#getNumber {
     color: green;
-    font-size: 10px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
