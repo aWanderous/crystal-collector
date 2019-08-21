@@ -53,11 +53,13 @@ $(document).ready(function() {
     if (counter === target) {
       wins++
       reset ();
+      $("#result").html("Well done!! You got the crystals back!")
     }
     // if the value does not add up to same target number then the user loses
     if (counter > target) {
       loses++
       reset ();
+      $("#result").html("The bandits have chased you out!!");
     }
     
   });
@@ -71,7 +73,8 @@ $(document).ready(function() {
    treasure = Math.floor(Math.random() * 12) + 1;
    counter = 0;
    $("#again").html("of my lord's crystals again.")
-   $("#score").html("The bandits have beaten us " + loses + " times and we have collected back " + wins + " times.");
+   $("#score").html("We have collected back " + wins + " times, but the bandits have beaten us " + loses + " times.");
+   $("#collected").html("If only someone will do something about these bandits.")
   }
   
   
