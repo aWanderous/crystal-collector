@@ -12,16 +12,36 @@ $(document).ready(function() {
   var counter = 0;
 
   
-  
+  console.log(lego);
+  console.log(plastic);
+  console.log(stones);
+  console.log(treasure);
+
+  // when boxes are clicked add the value together
   $("#legoBox, #plasticBox, #stonesBox, #treasureBox").on("click", function () {
     var buttonId = $(this).attr('id');
-    console.log(buttonId);
-    counter = counter + lego;
+    
+    if (buttonId === "legoBox") {
+      counter = counter + lego;
+      console.log(counter);
+    } 
+    else if (buttonId === "plasticBox") {
+      counter = counter + plastic;
+      console.log(counter);
+    } 
+    else if (buttonId === "stonesBox") {
+      counter = counter + stones;
+      console.log(counter);
+    } 
+    else if (buttonId === "treasureBox") {
+      counter = counter + treasure;
+      console.log(counter);
+    } 
+
   });
   
  
 
-  // when boxes are clicked add the value together
 
   // if the value added together == the same as target number user wins
 
