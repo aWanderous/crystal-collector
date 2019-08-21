@@ -10,8 +10,10 @@ $(document).ready(function() {
   var stones = Math.floor(Math.random() * 12) + 1;
   var treasure = Math.floor(Math.random() * 12) + 1;
   var counter = 0;
+  $("#score").html("Please help!!")
   $("#collected").html("Please hurry!!")
-  
+  $("#again").html("of my lord's crystals.")
+
   var wins = 0;
   var loses = 0;
   console.log(lego);
@@ -50,20 +52,27 @@ $(document).ready(function() {
     // if the value added together == the same as target number user wins
     if (counter === target) {
       wins++
-      $("#collected").html("Yes! we have bested the bandits " + wins + " times!");
+      reset ();
     }
     // if the value does not add up to same target number then the user loses
     if (counter > target) {
       loses++
-      $("#collected").html("Oh no! we lost our crystals again, " + loses + " times!");
+      reset ();
     }
     
   });
-  console.log(wins)
-  console.log(loses)
-  // and will need to fight the bandits
-
-  
+  // reset values
+  function reset() {
+    target = Math.floor(Math.random() * 120) + 19;
+    $("#getNumber").html(target);
+   lego = Math.floor(Math.random() * 12) + 1;
+   plastic = Math.floor(Math.random() * 12) + 1;
+   stones = Math.floor(Math.random() * 12) + 1;
+   treasure = Math.floor(Math.random() * 12) + 1;
+   counter = 0;
+   $("#again").html("of my lord's crystals again.")
+   $("#score").html("The bandits have beaten us " + loses + " times and we have collected back " + wins + " times.");
+  }
   
   
   

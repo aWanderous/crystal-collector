@@ -3,6 +3,7 @@ header {
     background-color: yellow;
     padding: 10px;
 }
+
 h1 {
     font-family: 'ZCOOL KuaiLe', cursive;
     text-align: center
@@ -25,6 +26,9 @@ h1 {
     font-weight: bold; 
 }
 
+counter {
+    color: blue;
+}
 img {
     width: 100%;
 }
