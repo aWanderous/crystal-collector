@@ -1,5 +1,5 @@
 
-header {
+#crystalHead {
     background-color: yellow;
     padding: 10px;
 }
@@ -31,4 +31,9 @@ counter {
 }
 img {
     width: 100%;
+}
+
+#banditsHead {
+    background-color: black;
+    color: grey;
 }
