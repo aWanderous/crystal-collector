@@ -25,29 +25,31 @@ $(document).ready(function() {
   $("#legoBox, #plasticBox, #stonesBox, #treasureBox").on("click", function () {
     var buttonId = $(this).attr('id');
     
-    if (buttonId === "legoBox") {
+    switch(buttonId) {
+      case "legoBox":
       counter = counter + lego;
       console.log(counter);
       $("#collected").html("Great!! we have now collected " + counter + "!");
-      
-    } 
-    else if (buttonId === "plasticBox") {
+      break;
+    
+      case "plasticBox":
       counter = counter + plastic;
       console.log(counter);
       $("#collected").html("Great!! we have now collected " + counter + "!");
-      
-    } 
-    else if (buttonId === "stonesBox") {
+      break;
+
+      case "stonesBox":
       counter = counter + stones;
       console.log(counter);
       $("#collected").html("Great!! we have now collected " + counter + "!");
-      
-    } 
-    else if (buttonId === "treasureBox") {
+      break;
+
+      case "treasureBox":
       counter = counter + treasure;
       console.log(counter);
       $("#collected").html("Great!! we have now collected " + counter + "!");
-      
+      break;
+
     } 
     // if the value added together == the same as target number user wins
     if (counter === target) {
