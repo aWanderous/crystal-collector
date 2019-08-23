@@ -78,10 +78,6 @@ $(document).ready(function() {
    $("#score").html("We have collected back " + wins + " times, but the bandits have beaten us " + loses + " times.");
    $("#collected").html("If only someone will do something about these bandits.")
   }
-  
-  
-  
-  
 
 });
 

@@ -1,0 +1,11 @@
+add on after RPG.html is finished  
+
+
+<!-- Fight the bandits, open up RPG game -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <a href="RPG.html" class="col-md-4"><img src="assets/images/bandits.png" alt="bandits"></a>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
